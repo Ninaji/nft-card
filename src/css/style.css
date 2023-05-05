@@ -1,0 +1,139 @@
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    
+    body{
+        background-color: var(--neutral-dark);
+        font-family: 'Outfit', sans-serif;
+    }
+
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .nft-card{
+        max-width: 345px;
+        background-color: var(--neutral-medium);
+        border-radius: 15px;
+        padding: 25px;
+    }
+
+    .image-link{
+        position: relative;
+        display: flex;
+        
+    }
+
+    .image-link:hover::before{
+        content: '';
+        background-color: var(--primary-medium);
+        opacity: 50%;
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        position: absolute;
+    }
+
+    .image-link:hover::after{
+        content: '';
+        background-image: url(../images/icon-view.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    
+    .image-link .nft{
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .title-link .title{
+        font-size: 22px;
+        color: #ffffff;
+        margin: 25px 0 20px;
+    }
+
+    .title-link .title:hover{
+        color: var(--primary-medium);      
+    }
+
+    .about{
+        color: var(--primary-soft);
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 25px;
+        margin-bottom: 20px;
+        
+    }
+
+    .info{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .info .price{
+        color: var(--primary-medium);
+        margin-bottom: 20px;
+        display: flex;
+
+    }
+
+    .info .price::before{
+        content: '';
+        background-image: url(../images/icon-ethereum.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 11px;
+        height: 20px;
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+    .info .days-left{
+        color: var(--primary-soft);  
+        display: flex;
+    }
+
+    .info .days-left::before{
+        content: '';
+        background-image: url(../images/icon-clock.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 15px;
+        height: 20px;
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+    .creator{
+        display: flex;
+        align-items: center;
+        border-top: 1px solid var(--neutral-soft);
+        padding-top: 15px;
+    }
+
+    .creator img{
+        max-width: 35px;
+        border: 1px solid white;
+        border-radius: 50%;
+        margin-right: 15px;
+    }
+
+    .creator p{
+        color: var(--primary-soft);
+        font-size: 16px;
+    }
+
+    .creator p a{
+        color: white;
+    }
+
+    .creator p a:hover{
+        color: var(--primary-medium);      
+    }
+
+
